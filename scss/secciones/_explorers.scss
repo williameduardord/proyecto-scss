@@ -1,0 +1,89 @@
+.grillaexplorers {
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: 0.2fr 1.6fr;
+    grid-template-rows: auto;
+    gap: 6px 4px;
+    grid-template-areas:
+      "header header"
+      "aside explorers"
+      "footer footer";
+  }
+  
+  .header {
+    grid-area: header;
+  }
+  
+  .explorers {
+    grid-area: explorers;
+    height: 100%;
+    
+  }
+  
+  .aside {
+    grid-area: aside;
+  }
+  
+  .footer {
+    grid-area: footer;
+  }
+  
+  .explorersgrid {
+    display: grid;
+    grid-template-columns: 0.9fr 0.9fr 0.9fr;
+    grid-template-rows: 0.5fr 1.6fr 1.6fr;
+    gap: 6px 4px;
+    grid-auto-flow: column;
+    grid-template-areas:
+      "h2explorers h2explorers h2explorers"
+      "etherscan bscscan cardanoscan"
+      "polygon solscan velas";
+      margin-left: 15%;
+      margin-bottom: 5%;
+     div.card{
+        width:350px;
+      }
+  }
+  
+  .solscan {
+    grid-area: solscan;
+  }
+  
+  .polygon {
+    grid-area: polygon;
+  }
+  
+  .bscscan {
+    grid-area: bscscan;
+  }
+  
+  .etherscan {
+    grid-area: etherscan;
+  }
+  
+  .cardanoscan {
+    grid-area: cardanoscan;
+  }
+  
+  .velas {
+    grid-area: velas;
+  }
+  
+  .h2explorers {
+    grid-area: h2explorers;
+  }
+  .h2explorers {
+    font-family: 'Luckiest Guy', cursive;
+    font-size: 40px;
+    text-align: center;
+    letter-spacing: 6px;
+    width: 100%;
+    margin: 10% 80% 10%;
+  }
+  .imgexplorers {
+    width: 340px;
+    height: 250px;
+    border-radius: 20px;
+    transition: 1s;
+    
+  }

@@ -1,0 +1,472 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+div {
+  /*ASIDE INDEX.HTML*/
+  /* SECTION INDEX.HTML */
+}
+
+div .grilla {
+  display: grid;
+  grid-auto-flow: column;
+  grid-template-columns: 0.2fr 1.6fr;
+  grid-template-rows: auto;
+  gap: 6px 4px;
+  grid-template-areas:
+    "header header"
+    "aside section"
+    "footer footer";
+}
+
+.header {
+  grid-area: header;
+}
+
+.aside {
+  grid-area: aside;
+  z-index: 2;
+}
+
+.section {
+  grid-area: section;
+}
+
+.footer {
+  grid-area: footer;
+}
+
+div aside {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #1f247d;
+  background: linear-gradient(180deg, #1f247d 0%, #4646aa 41%, #649cee 100%);
+  width: 300px;
+}
+
+div aside #carouselExampleIndicators {
+  z-index: 1;
+}
+
+div aside p {
+  color: aliceblue;
+  letter-spacing: 2px;
+  text-align: center;
+  font-family: 'Luckiest Guy', cursive;
+  font-size: 20px;
+  margin: 5% 0 3% 5%;
+}
+
+div aside .asidevideo {
+  width: 270px;
+  border: 1px black solid;
+  transition: 2s;
+  border-radius: 10px;
+  z-index: 2;
+}
+
+div aside .asidevideo:hover {
+  transform: translatey(250px) translateX(840px) scale(5);
+}
+
+div section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+div section div {
+  width: 100%;
+}
+
+div section a.enlace {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  text-decoration: none;
+  border: 2px black solid;
+  width: 100%;
+  height: 400px;
+  transition: 1s;
+  background-image: linear-gradient(to top, lightgrey 0%, lightgrey 1%, #e0e0e0 26%, #efefef 48%, #d9d9d9 75%, #bcbcbc 100%);
+}
+
+div section a:hover {
+  transform: scale(1.05);
+  background: #1f247d;
+  background: linear-gradient(180deg, #1f247d 0%, #4646aa 41%, #649cee 100%);
+}
+
+div section p {
+  font-size: 60px;
+  text-decoration: none;
+  font-family: 'Luckiest Guy', cursive;
+  letter-spacing: 20px;
+  color: #050505;
+}
+
+.grillawallets {
+  display: grid;
+  grid-template-columns: 0.2fr 1.6fr;
+  grid-template-rows: auto;
+  gap: 6px 4px;
+  grid-template-areas: "header header"
+    "aside extension"
+    "aside desk"
+    "footer footer";
+}
+
+.aside {
+  grid-area: aside;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.extension {
+  grid-area: extension;
+}
+
+.desk {
+  grid-area: desk;
+}
+
+.footer {
+  grid-area: footer;
+}
+
+.header {
+  grid-area: header;
+}
+
+section {
+  grid-area: extension;
+  background-image: linear-gradient(to top, lightgrey 0%, lightgrey 1%, #e0e0e0 26%, #efefef 48%, #d9d9d9 75%, #bcbcbc 100%);
+  height: 650px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+section .flexwallets {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+section img.imgwallets {
+  width: 280px;
+  height: 280px;
+  border-radius: 20px;
+}
+
+section p.card-text {
+  font-size: 20px;
+  letter-spacing: 1px;
+}
+
+section a.btn.btn-primary {
+  width: auto;
+  height: auto;
+  color: black;
+}
+
+section div.card {
+  border: solid 1px black;
+  padding: 3px;
+  width: auto;
+  height: auto;
+  border-radius: 20px;
+}
+
+section .card:hover {
+  background: #fa3363;
+  background: linear-gradient(0deg, rgba(250, 51, 99, 0.734331) 0%, rgba(99, 110, 176, 0.950018) 41%, rgba(164, 178, 198, 0.815564) 100%);
+}
+
+section .h2wallets {
+  font-family: 'Luckiest Guy', cursive;
+  font-size: 45px;
+  letter-spacing: 6px;
+  margin: 30px;
+}
+
+.grillaswaps {
+  display: grid;
+  grid-auto-flow: column;
+  grid-template-columns: 0.2fr 1.6fr;
+  grid-template-rows: auto;
+  gap: 6px 4px;
+  grid-template-areas: "header header"
+    "aside swaps"
+    "footer footer";
+}
+
+.header {
+  grid-area: header;
+}
+
+.swaps {
+  grid-area: swaps;
+}
+
+.aside {
+  grid-area: aside;
+}
+
+.footer {
+  grid-area: footer;
+}
+
+section.swaps {
+  display: flex;
+  flex-direction: column;
+  height: auto;
+}
+
+section.swaps .h2swaps {
+  font-family: 'Luckiest Guy', cursive;
+  font-size: 40px;
+  letter-spacing: 6px;
+  margin: 100px 0px 150px 0px;
+}
+
+section.swaps .swapsflex {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+section.swaps .swapsflex img {
+  width: 280px;
+  height: 280px;
+  border-radius: 20px;
+}
+
+.grillaexchanges {
+  display: grid;
+  grid-auto-flow: column;
+  grid-template-columns: 0.2fr 1.6fr;
+  grid-template-rows: auto;
+  gap: 6px 4px;
+  grid-template-areas: "header header"
+    "aside exchanges"
+    "footer footer";
+}
+
+.grillaexchanges .header {
+  grid-area: header;
+}
+
+.grillaexchanges .exchanges {
+  grid-area: exchanges;
+}
+
+.grillaexchanges .aside {
+  grid-area: aside;
+}
+
+.grillaexchanges .footer {
+  grid-area: footer;
+}
+
+.grillaexchanges section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  background-image: linear-gradient(to top, lightgrey 0%, lightgrey 1%, #e0e0e0 26%, #efefef 48%, #d9d9d9 75%, #bcbcbc 100%);
+}
+
+.grillaexchanges section .h2exchanges {
+  font-family: 'Luckiest Guy', cursive;
+  font-size: 45px;
+  letter-spacing: 6px;
+  margin: 50px 50px;
+}
+
+.grillaexchanges section .imgexchanges {
+  width: 55%;
+  height: 600px;
+  border-radius: 10px;
+  transition: 1s;
+  margin: 2.5%;
+  z-index: 0;
+}
+
+.grillaexchanges section .carousel-item.active a {
+  height: 50%;
+  border: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  text-decoration: none;
+  width: 100%;
+  transition: 1s;
+}
+
+.grillaexchanges section a:hover {
+  transform: scale(1.05);
+  background: #fa3363;
+  background: linear-gradient(0deg, rgba(250, 51, 99, 0.734331) 0%, rgba(99, 110, 176, 0.950018) 41%, rgba(164, 178, 198, 0.815564) 100%);
+}
+
+.grillaexchanges section .carousel-indicators {
+  margin-left: 0%;
+}
+
+.grillaexplorers {
+  display: grid;
+  grid-auto-flow: column;
+  grid-template-columns: 0.2fr 1.6fr;
+  grid-template-rows: auto;
+  gap: 6px 4px;
+  grid-template-areas: "header header"
+    "aside explorers"
+    "footer footer";
+}
+
+.header {
+  grid-area: header;
+}
+
+.explorers {
+  grid-area: explorers;
+  height: 100%;
+}
+
+.aside {
+  grid-area: aside;
+}
+
+.footer {
+  grid-area: footer;
+}
+
+.explorersgrid {
+  display: grid;
+  grid-template-columns: 0.9fr 0.9fr 0.9fr;
+  grid-template-rows: 0.5fr 1.6fr 1.6fr;
+  gap: 6px 4px;
+  grid-auto-flow: column;
+  grid-template-areas: "h2explorers h2explorers h2explorers"
+    "etherscan bscscan cardanoscan"
+    "polygon solscan velas";
+  margin-left: 15%;
+  margin-bottom: 5%;
+}
+
+.explorersgrid div.card {
+  width: 350px;
+}
+
+.solscan {
+  grid-area: solscan;
+}
+
+.polygon {
+  grid-area: polygon;
+}
+
+.bscscan {
+  grid-area: bscscan;
+}
+
+.etherscan {
+  grid-area: etherscan;
+}
+
+.cardanoscan {
+  grid-area: cardanoscan;
+}
+
+.velas {
+  grid-area: velas;
+}
+
+.h2explorers {
+  grid-area: h2explorers;
+}
+
+.h2explorers {
+  font-family: 'Luckiest Guy', cursive;
+  font-size: 40px;
+  text-align: center;
+  letter-spacing: 6px;
+  width: 100%;
+  margin: 10% 80% 10%;
+}
+
+.imgexplorers {
+  width: 340px;
+  height: 250px;
+  border-radius: 20px;
+  transition: 1s;
+}
+
+/* BARRA de menu de navegacion */
+header {
+  background: #1f247d;
+  background: linear-gradient(180deg, #1f247d 0%, #4646aa 41%, #649cee 100%);
+}
+
+header .flexheader {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  height: 120px;
+  width: 100vw;
+}
+
+header .flexheader .logo {
+  letter-spacing: 10px;
+  font-size: 60px;
+  justify-content: center;
+  justify-items: center;
+  color: #040404;
+  font-family: 'Luckiest Guy', cursive;
+}
+
+header .flexheader .menu a {
+  color: #020202;
+  text-decoration: none;
+  margin: 20px;
+  font-family: 'Luckiest Guy', cursive;
+  font-size: 25px;
+  letter-spacing: 3px;
+}
+
+header .flexheader .menu a:hover {
+  color: #f0578a;
+}
+
+/* FOOTER */
+.footer {
+  background-color: darkgray;
+  height: 150px;
+  width: auto;
+  font-size: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.footer ul {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.footer li {
+  list-style: none;
+}
+
+.footer li a {
+  text-decoration: none;
+}

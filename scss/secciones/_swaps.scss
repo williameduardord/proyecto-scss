@@ -1,0 +1,49 @@
+.grillaswaps {
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: 0.2fr 1.6fr;
+    grid-template-rows: auto;
+    gap: 6px 4px;
+    grid-template-areas:
+      "header header"
+      "aside swaps"
+      "footer footer";
+  }
+  
+  .header {
+    grid-area: header;
+  }
+  
+  .swaps {
+    grid-area: swaps;
+  }
+  
+  .aside {
+    grid-area: aside;
+  }
+  
+  .footer {
+    grid-area: footer;
+  }
+
+  section.swaps{
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    .h2swaps {
+        font-family: 'Luckiest Guy', cursive;
+        font-size: 40px;
+        letter-spacing: 6px;
+        margin:100px  0px 150px 0px;
+    }
+    .swapsflex{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        img{
+            width: 280px;
+            height: 280px;
+            border-radius: 20px;
+        }
+    }
+  }
