@@ -8,6 +8,7 @@
 @import './secciones/swaps';
 @import './secciones/exchanges';
 @import './secciones/explorers';
+
 /* BARRA de menu de navegacion */
 header {
     background: rgb(31, 36, 125);
@@ -52,22 +53,68 @@ header {
     width: auto;
     font-size: 30px;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-     
-    
-ul{
-    display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-evenly;
 
-}
-    li {
-        list-style: none;
-        a {
-            text-decoration: none;
-        }
-
+    a {
+        text-decoration: none;
     }
+
+
 }
+/* header para 475px */
+@media (max-width: 475px) {
+    header {
+       
+        background: rgb(31, 36, 125);
+        background: linear-gradient(180deg, rgba(31, 36, 125, 1) 0%, rgba(70, 70, 170, 1) 41%, rgba(100, 156, 238, 1) 100%);
+    
+        .flexheader {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+          
+            height: 120px;
+           
+    
+            .logo {
+                letter-spacing: 10px;
+                font-size: 38px;
+                justify-content: center;
+                justify-items: center;
+                color: rgb(4, 4, 4);
+                font-family: 'Luckiest Guy', cursive;
+            }
+    
+            .menu a {
+                color: rgb(2, 2, 2);
+                text-decoration: none;
+               margin: 0;
+                font-family: 'Luckiest Guy', cursive;
+                font-size: 15px;
+                letter-spacing: 1px;
+            }
+    
+            .menu a:hover {
+                color: rgb(240, 87, 138);
+            }
+        }
+    }
+    }
+    /* FOOTER para 475px */
+    @media (max-width: 475px) {
+.footer {
+    background-color: darkgray;
+    height: 150px;
+    width: auto;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+
+    a {
+        text-decoration: none;
+    }
+}}

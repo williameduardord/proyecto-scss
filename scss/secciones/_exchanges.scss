@@ -41,7 +41,7 @@
         }
 
         .imgexchanges {
-            width: 55%;
+            width: auto;
             height: 600px;
             border-radius: 10px;
             transition: 1s;
@@ -62,14 +62,10 @@
             transition: 1s;
         }
 
-        a:hover {
-            transform: scale(1.05);
-            background: rgb(250, 51, 99);
-            background: linear-gradient(0deg, rgba(250, 51, 99, 0.7343312324929971) 0%, rgba(99, 110, 176, 0.9500175070028011) 41%, rgba(164, 178, 198, 0.8155637254901961) 100%);
-        }
+     
 
         .carousel-indicators {
-            margin-left: 0%;
+           
         }
     }
 }
