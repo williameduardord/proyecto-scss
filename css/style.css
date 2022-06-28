@@ -55,7 +55,8 @@ aside {
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 100%; }
+  height: 100%;
+  background-color: white; }
   .section div {
     width: 100%;
     margin: 0.25%; }
@@ -102,6 +103,11 @@ aside {
   .aside {
     flex-direction: column;
     width: 100%; }
+    .aside .asideflex {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100%; }
     .aside .asidevideo {
       width: 80%;
       min-height: 300px; }
@@ -151,7 +157,9 @@ section {
   section .flexwallets {
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly; }
+    justify-content: space-evenly;
+    width: 100%;
+    height: 100%; }
   section img.imgwallets {
     width: 280px;
     height: 280px;
@@ -177,6 +185,62 @@ section {
     font-size: 45px;
     letter-spacing: 6px;
     margin: 30px; }
+
+/* wallets.html para 475px */
+@media (max-width: 475px) {
+  .grillawallets {
+    display: grid;
+    grid-template-columns: 0.2fr 1.6fr;
+    grid-template-rows: auto;
+    gap: 6px 4px;
+    grid-template-areas: "header" "extension" "desk" "aside" "footer"; }
+  .aside {
+    grid-area: aside;
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+  .extension {
+    grid-area: extension; }
+  .desk {
+    grid-area: desk; }
+  .footer {
+    grid-area: footer; }
+  .header {
+    grid-area: header; }
+  section {
+    grid-area: extension;
+    background-image: linear-gradient(to top, lightgrey 0%, lightgrey 1%, #e0e0e0 26%, #efefef 48%, #d9d9d9 75%, #bcbcbc 100%);
+    height: 650px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%; }
+    section .flexwallets {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      align-items: center;
+      width: 100%;
+      height: 100%; }
+    section img.imgwallets {
+      width: 280px;
+      height: 280px;
+      border-radius: 20px; }
+    section p.card-text {
+      font-size: 20px;
+      letter-spacing: 1px; }
+    section div.card {
+      border: solid 1px black;
+      padding: 3px;
+      width: auto;
+      height: auto;
+      border-radius: 20px;
+      margin: 20px; }
+    section .h2wallets {
+      font-family: 'Luckiest Guy', cursive;
+      font-size: 25px;
+      letter-spacing: 6px;
+      margin: 30px; } }
 
 .grillaswaps {
   display: grid;
@@ -210,11 +274,50 @@ section.swaps {
   section.swaps .swapsflex {
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly; }
+    justify-content: space-evenly;
+    width: 100%; }
     section.swaps .swapsflex img {
       width: 280px;
       height: 280px;
       border-radius: 20px; }
+
+/* swaps.html para 475px */
+@media (max-width: 475px) {
+  .grillaswaps {
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: 0.2fr 1.6fr;
+    grid-template-rows: auto;
+    gap: 6px 4px;
+    grid-template-areas: "header" "swaps" "aside" "footer"; }
+  .header {
+    grid-area: header; }
+  .swaps {
+    grid-area: swaps; }
+  .aside {
+    grid-area: aside; }
+  .footer {
+    grid-area: footer; }
+  section.swaps {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    width: 100%; }
+    section.swaps .h2swaps {
+      font-family: 'Luckiest Guy', cursive;
+      font-size: 25px;
+      letter-spacing: 6px;
+      margin: 40px  0px 50px 0px; }
+    section.swaps .swapsflex {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      align-items: center;
+      width: 100%; }
+      section.swaps .swapsflex img {
+        width: 280px;
+        height: 280px;
+        border-radius: 20px; } }
 
 .grillaexchanges {
   display: grid;
@@ -260,6 +363,53 @@ section.swaps {
       width: 100%;
       transition: 1s; }
 
+/* exchanges.html para 475px */
+@media (max-width: 475px) {
+  .grillaexchanges {
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: 0.2fr 1.6fr;
+    grid-template-rows: auto;
+    gap: 6px 4px;
+    grid-template-areas: "header" "exchanges" "aside" "footer"; }
+    .grillaexchanges .header {
+      grid-area: header; }
+    .grillaexchanges .exchanges {
+      grid-area: exchanges; }
+    .grillaexchanges .aside {
+      grid-area: aside; }
+    .grillaexchanges .footer {
+      grid-area: footer; }
+    .grillaexchanges section {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      height: 100%;
+      background-image: linear-gradient(to top, lightgrey 0%, lightgrey 1%, #e0e0e0 26%, #efefef 48%, #d9d9d9 75%, #bcbcbc 100%); }
+      .grillaexchanges section .h2exchanges {
+        font-family: 'Luckiest Guy', cursive;
+        font-size: 20px;
+        width: auto;
+        letter-spacing: 6px;
+        margin: 30px 30px; }
+      .grillaexchanges section .imgexchanges {
+        width: auto;
+        height: 300px;
+        border-radius: 10px;
+        transition: 1s;
+        margin: 2.5%;
+        z-index: 0; }
+      .grillaexchanges section .carousel-item.active a {
+        height: 50%;
+        border: none;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+        text-decoration: none;
+        width: 100%;
+        transition: 1s; } }
+
 .grillaexplorers {
   display: grid;
   grid-auto-flow: column;
@@ -287,11 +437,10 @@ section.swaps {
   grid-template-rows: 0.5fr 1.6fr 1.6fr;
   gap: 6px 4px;
   grid-auto-flow: column;
-  grid-template-areas: "h2explorers h2explorers h2explorers" "etherscan bscscan cardanoscan" "polygon solscan velas";
-  margin-left: 15%;
-  margin-bottom: 5%; }
+  grid-template-areas: "h2explorers h2explorers h2explorers" "etherscan bscscan cardanoscan" "polygon solscan velas"; }
   .explorersgrid div.card {
-    width: 350px; }
+    width: 350px;
+    margin: 20px; }
 
 .solscan {
   grid-area: solscan; }
@@ -320,13 +469,50 @@ section.swaps {
   text-align: center;
   letter-spacing: 6px;
   width: 100%;
-  margin: 10% 80% 10%; }
+  margin-top: 30px; }
 
 .imgexplorers {
   width: 340px;
   height: 250px;
   border-radius: 20px;
   transition: 1s; }
+
+/* explorers.html para 475px */
+@media (max-width: 475px) {
+  .grillaexplorers {
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: 0.2fr 1.6fr;
+    grid-template-rows: auto;
+    gap: 6px 4px;
+    grid-template-areas: "header" "explorers" "aside" "footer"; }
+  .header {
+    grid-area: header; }
+  .explorers {
+    grid-area: explorers;
+    height: 100%; }
+  .aside {
+    grid-area: aside; }
+  .footer {
+    grid-area: footer; }
+  .explorersgrid {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    .explorersgrid div.card {
+      width: 288px; }
+  .h2explorers {
+    font-family: 'Luckiest Guy', cursive;
+    font-size: 25px;
+    text-align: center;
+    letter-spacing: 6px;
+    width: 100%;
+    margin: 10% 80% 10%; }
+  .imgexplorers {
+    width: 280px;
+    height: 250px;
+    border-radius: 20px;
+    transition: 1s; } }
 
 /* BARRA de menu de navegacion */
 header {
@@ -345,7 +531,18 @@ header {
       justify-content: center;
       justify-items: center;
       color: #040404;
-      font-family: 'Luckiest Guy', cursive; }
+      font-family: 'Luckiest Guy', cursive;
+      animation-name: animacionLogo;
+      animation-duration: 5s;
+      animation-iteration-count: infinite; }
+
+@keyframes animacionLogo {
+  0% {
+    color: #f0578a; }
+  25% {
+    color: blue; }
+  50% {
+    color: black; } }
     header .flexheader .menu a {
       color: #020202;
       text-decoration: none;
@@ -353,6 +550,9 @@ header {
       font-family: 'Luckiest Guy', cursive;
       font-size: 25px;
       letter-spacing: 3px; }
+    header .flexheader a.nav-link.active {
+      font-size: 30px;
+      color: #f0578a; }
     header .flexheader .menu a:hover {
       color: #f0578a; }
 

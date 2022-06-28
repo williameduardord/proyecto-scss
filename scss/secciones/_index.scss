@@ -72,6 +72,7 @@ aside {
     flex-direction: column;
     align-items: center;
     height: 100%;
+    background-color: white;
 
     div {
         width: 100%;
@@ -143,12 +144,16 @@ aside {
     .aside {
         flex-direction: column;
         width: 100%;
+        .asideflex{
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          width: 100%;
+        }
         .asidevideo{
             width: 80%;
             min-height: 300px;
-        }
-     
-    }
+        }}
     aside{
     .asidevideo:hover {
         transform: none;

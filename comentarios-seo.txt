@@ -1,0 +1,16 @@
+seo index
+ <meta name="keywors" content="crypto tools,aprende cryptomonedas,wallets,exchanges,swaps,explorers,video cryptomonedas">
+ <meta name="description" content="Principales herramientas para la gestion de crypto activos">
+seo Wallets
+ <meta name="keywors" content="crypto tools,aprende cryptomonedas, cryptomonedas,criptomonedas,metamask,phanthom,yoroi,hive,ccvault,exodous,atomic,daedalus,firefly,samouraiwallet,wallets,video cryptomonedas">
+ <meta name="description" content="Principales billeteras para la autocustodia de cryptoactivos">
+seo swaps 
+ <meta name="keywors" content="crypto tools,aprende cryptomonedas,cryptomonedas,criptomonedas,swaps,uniswap,pancakeswap,raydium,sundaeswap,alcor,video cryptomonedas">
+ <meta name="description" content="Intercambios desentralizados para operar sin restricciones en todo momento">
+seo exchanges
+ <meta name="keywors" content="crypto tools,aprende cryptomonedas,criptomonedas,exchanges,cryptoexchanges, binance,okex,,bittrex,video cryptomonedas">
+ <meta name="description" content="Intercambios centralizados,  para operar delegando la custodia de los criptoactivos">
+seo explorers
+ <meta name="keywors" content="crypto tools,aprende cryptomonedas,etherscan,bscscan,cardanoscan,poligonscan,solanascan,velasscan,explorers,video cryptomonedas">
+ <meta name="description" content="Exploradores para seguir los movimientos de las operaciones en las distintas blockchains">
+ 
