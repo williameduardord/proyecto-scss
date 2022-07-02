@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0; }
 
+/* Colores y fondos*/
 .grilla {
   display: grid;
   grid-auto-flow: column;
@@ -136,10 +137,12 @@ aside {
   align-items: center; }
 
 .extension {
-  grid-area: extension; }
+  grid-area: extension;
+  background-image: linear-gradient(to top, lightgrey 0%, lightgrey 1%, #e0e0e0 26%, #efefef 48%, #d9d9d9 75%, #bcbcbc 100%); }
 
 .desk {
-  grid-area: desk; }
+  grid-area: desk;
+  background-image: linear-gradient(to top, lightgrey 0%, lightgrey 1%, #e0e0e0 26%, #efefef 48%, #d9d9d9 75%, #bcbcbc 100%); }
 
 .footer {
   grid-area: footer; }
@@ -149,8 +152,7 @@ aside {
 
 section {
   grid-area: extension;
-  background-image: linear-gradient(to top, lightgrey 0%, lightgrey 1%, #e0e0e0 26%, #efefef 48%, #d9d9d9 75%, #bcbcbc 100%);
-  height: 650px;
+  height: 100%;
   display: flex;
   flex-direction: column;
   align-items: center; }
@@ -165,7 +167,7 @@ section {
     height: 280px;
     border-radius: 20px; }
   section p.card-text {
-    font-size: 20px;
+    font-size: 17px;
     letter-spacing: 1px; }
   section a.btn.btn-primary {
     width: auto;
@@ -174,7 +176,8 @@ section {
   section div.card {
     border: solid 1px black;
     padding: 3px;
-    width: auto;
+    margin: 10px;
+    width: 288px;
     height: auto;
     border-radius: 20px; }
   section .card:hover {
@@ -265,7 +268,8 @@ section {
 section.swaps {
   display: flex;
   flex-direction: column;
-  height: auto; }
+  height: auto;
+  background-image: linear-gradient(to top, lightgrey 0%, lightgrey 1%, #e0e0e0 26%, #efefef 48%, #d9d9d9 75%, #bcbcbc 100%); }
   section.swaps .h2swaps {
     font-family: 'Luckiest Guy', cursive;
     font-size: 40px;
@@ -423,7 +427,8 @@ section.swaps {
 
 .explorers {
   grid-area: explorers;
-  height: 100%; }
+  height: 100%;
+  background-image: linear-gradient(to top, lightgrey 0%, lightgrey 1%, #e0e0e0 26%, #efefef 48%, #d9d9d9 75%, #bcbcbc 100%); }
 
 .aside {
   grid-area: aside; }
@@ -514,6 +519,7 @@ section.swaps {
     border-radius: 20px;
     transition: 1s; } }
 
+/*condicionales y variable*/
 /* BARRA de menu de navegacion */
 header {
   background: #1f247d;
@@ -559,7 +565,7 @@ header {
 /* FOOTER */
 .footer {
   background-color: darkgray;
-  height: 150px;
+  height: 100%;
   width: auto;
   font-size: 30px;
   display: flex;
@@ -568,6 +574,22 @@ header {
   justify-content: space-evenly; }
   .footer a {
     text-decoration: none; }
+  .footer .redes {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 100%; }
+  .footer .flexmap {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    .footer .flexmap .mapa {
+      margin-bottom: 20px; }
+  .footer p {
+    margin-top: 20px;
+    font-family: 'Luckiest Guy', cursive;
+    font-size: 25px;
+    letter-spacing: 3px; }
 
 /* header para 475px */
 @media (max-width: 475px) {
@@ -600,7 +622,7 @@ header {
 @media (max-width: 475px) {
   .footer {
     background-color: darkgray;
-    height: 150px;
+    height: 100%;
     width: auto;
     font-size: 20px;
     display: flex;
@@ -608,4 +630,21 @@ header {
     align-items: center;
     justify-content: space-evenly; }
     .footer a {
-      text-decoration: none; } }
+      text-decoration: none;
+      margin: 10px; }
+    .footer .redes {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      height: 100%; }
+    .footer .flexmap {
+      display: flex;
+      flex-direction: column;
+      align-items: center; }
+      .footer .flexmap .mapa {
+        margin: 20px; }
+    .footer p {
+      margin-top: 20px;
+      font-family: 'Luckiest Guy', cursive;
+      font-size: 25px;
+      letter-spacing: 3px; } }

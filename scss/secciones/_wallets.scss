@@ -21,12 +21,12 @@
 
 .extension {
     grid-area: extension;
-
+    background-image: linear-gradient(to top, lightgrey 0%, lightgrey 1%, #e0e0e0 26%, #efefef 48%, #d9d9d9 75%, #bcbcbc 100%);
 }
 
 .desk {
     grid-area: desk;
-
+    background-image: linear-gradient(to top, lightgrey 0%, lightgrey 1%, #e0e0e0 26%, #efefef 48%, #d9d9d9 75%, #bcbcbc 100%);
 }
 
 .footer {
@@ -39,8 +39,8 @@
 
 section {
     grid-area: extension;
-    background-image: linear-gradient(to top, lightgrey 0%, lightgrey 1%, #e0e0e0 26%, #efefef 48%, #d9d9d9 75%, #bcbcbc 100%);
-    height: 650px;
+   
+    height:100%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -61,7 +61,7 @@ section {
     }
 
     p.card-text {
-        font-size: 20px;
+        font-size: 17px;
         letter-spacing: 1px;
     }
 
@@ -74,7 +74,8 @@ section {
     div.card {
         border: solid 1px black;
         padding: 3px;
-        width: auto;
+        margin: 10px;
+        width: 288px;
         height: auto;
         border-radius: 20px;
     }
