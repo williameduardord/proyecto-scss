@@ -2,6 +2,137 @@
   margin: 0;
   padding: 0; }
 
+/* BARRA de menu de navegacion */
+header {
+  background-image: linear-gradient(180deg, #1f247d 0%, #4646aa 41%, #649cee 100%); }
+  header .flexheader {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    height: 120px;
+    width: 100vw; }
+    header .flexheader .logo {
+      letter-spacing: 10px;
+      font-size: 60px;
+      justify-content: center;
+      justify-items: center;
+      color: #040404;
+      font-family: 'Luckiest Guy', cursive;
+      animation-name: animacionLogo;
+      animation-duration: 5s;
+      animation-iteration-count: infinite; }
+
+@keyframes animacionLogo {
+  0% {
+    color: #f0578a; }
+  25% {
+    color: blue; }
+  50% {
+    color: black; } }
+    header .flexheader .menu a {
+      color: #020202;
+      text-decoration: none;
+      margin: 20px;
+      font-family: 'Luckiest Guy', cursive;
+      font-size: 25px;
+      letter-spacing: 3px; }
+    header .flexheader a.nav-link.active {
+      font-size: 30px;
+      color: #f0578a; }
+    header .flexheader .menu a:hover {
+      color: #f0578a; }
+
+/* FOOTER */
+.footer {
+  background-color: darkgray;
+  height: 100%;
+  width: auto;
+  font-size: 30px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly; }
+  .footer a {
+    text-decoration: none; }
+  .footer .redes {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 100%; }
+  .footer .flexmap {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    .footer .flexmap .mapa {
+      margin-bottom: 20px; }
+  .footer p {
+    margin-top: 20px;
+    font-family: 'Luckiest Guy', cursive;
+    font-size: 25px;
+    letter-spacing: 3px; }
+
+/* header para 475px */
+@media (max-width: 475px) {
+  header {
+    background: #1f247d;
+    background: linear-gradient(180deg, #1f247d 0%, #4646aa 41%, #649cee 100%); }
+    header .flexheader {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      height: 120px; }
+      header .flexheader .logo {
+        letter-spacing: 10px;
+        font-size: 38px;
+        justify-content: center;
+        justify-items: center;
+        color: #040404;
+        font-family: 'Luckiest Guy', cursive; }
+      header .flexheader .menu a {
+        color: #020202;
+        text-decoration: none;
+        margin: 0;
+        font-family: 'Luckiest Guy', cursive;
+        font-size: 15px;
+        letter-spacing: 1px; }
+      header .flexheader a.nav-link.active {
+        font-size: 15px;
+        color: #f0578a; }
+      header .flexheader .menu a:hover {
+        color: #f0578a; } }
+
+/* FOOTER para 475px */
+@media (max-width: 475px) {
+  .footer {
+    background-color: darkgray;
+    height: 100%;
+    width: auto;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly; }
+    .footer a {
+      text-decoration: none;
+      margin: 10px; }
+    .footer .redes {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      height: 100%; }
+    .footer .flexmap {
+      display: flex;
+      flex-direction: column;
+      align-items: center; }
+      .footer .flexmap .mapa {
+        margin: 20px; }
+    .footer p {
+      margin-top: 20px;
+      font-family: 'Luckiest Guy', cursive;
+      font-size: 25px;
+      letter-spacing: 3px; } }
+
 /* Colores y fondos*/
 .grilla {
   display: grid;
@@ -518,133 +649,3 @@ section.swaps {
     height: 250px;
     border-radius: 20px;
     transition: 1s; } }
-
-/*condicionales y variable*/
-/* BARRA de menu de navegacion */
-header {
-  background: #1f247d;
-  background: linear-gradient(180deg, #1f247d 0%, #4646aa 41%, #649cee 100%); }
-  header .flexheader {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    height: 120px;
-    width: 100vw; }
-    header .flexheader .logo {
-      letter-spacing: 10px;
-      font-size: 60px;
-      justify-content: center;
-      justify-items: center;
-      color: #040404;
-      font-family: 'Luckiest Guy', cursive;
-      animation-name: animacionLogo;
-      animation-duration: 5s;
-      animation-iteration-count: infinite; }
-
-@keyframes animacionLogo {
-  0% {
-    color: #f0578a; }
-  25% {
-    color: blue; }
-  50% {
-    color: black; } }
-    header .flexheader .menu a {
-      color: #020202;
-      text-decoration: none;
-      margin: 20px;
-      font-family: 'Luckiest Guy', cursive;
-      font-size: 25px;
-      letter-spacing: 3px; }
-    header .flexheader a.nav-link.active {
-      font-size: 30px;
-      color: #f0578a; }
-    header .flexheader .menu a:hover {
-      color: #f0578a; }
-
-/* FOOTER */
-.footer {
-  background-color: darkgray;
-  height: 100%;
-  width: auto;
-  font-size: 30px;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-evenly; }
-  .footer a {
-    text-decoration: none; }
-  .footer .redes {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    height: 100%; }
-  .footer .flexmap {
-    display: flex;
-    flex-direction: column;
-    align-items: center; }
-    .footer .flexmap .mapa {
-      margin-bottom: 20px; }
-  .footer p {
-    margin-top: 20px;
-    font-family: 'Luckiest Guy', cursive;
-    font-size: 25px;
-    letter-spacing: 3px; }
-
-/* header para 475px */
-@media (max-width: 475px) {
-  header {
-    background: #1f247d;
-    background: linear-gradient(180deg, #1f247d 0%, #4646aa 41%, #649cee 100%); }
-    header .flexheader {
-      display: flex;
-      flex-direction: column;
-      justify-content: space-evenly;
-      height: 120px; }
-      header .flexheader .logo {
-        letter-spacing: 10px;
-        font-size: 38px;
-        justify-content: center;
-        justify-items: center;
-        color: #040404;
-        font-family: 'Luckiest Guy', cursive; }
-      header .flexheader .menu a {
-        color: #020202;
-        text-decoration: none;
-        margin: 0;
-        font-family: 'Luckiest Guy', cursive;
-        font-size: 15px;
-        letter-spacing: 1px; }
-      header .flexheader .menu a:hover {
-        color: #f0578a; } }
-
-/* FOOTER para 475px */
-@media (max-width: 475px) {
-  .footer {
-    background-color: darkgray;
-    height: 100%;
-    width: auto;
-    font-size: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly; }
-    .footer a {
-      text-decoration: none;
-      margin: 10px; }
-    .footer .redes {
-      display: flex;
-      flex-direction: column;
-      justify-content: space-evenly;
-      height: 100%; }
-    .footer .flexmap {
-      display: flex;
-      flex-direction: column;
-      align-items: center; }
-      .footer .flexmap .mapa {
-        margin: 20px; }
-    .footer p {
-      margin-top: 20px;
-      font-family: 'Luckiest Guy', cursive;
-      font-size: 25px;
-      letter-spacing: 3px; } }
